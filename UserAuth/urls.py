@@ -39,4 +39,5 @@ urlpatterns = [
     path('password-reset/confirm/', password_reset_confirm, name='password_reset_confirm'),
     path('password-reset/complete/', password_reset_complete, name='password_reset_complete'),
     path('api/', include(router.urls)),
+    path('index/', index, name='index'),
 ]

@@ -124,3 +124,13 @@ def profile_list(request):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+
+def index(request):
+    num_username=Profile.objects.count()
+    num_ID=Profile.objects.count()
+    return render(
+        request,
+        'index.html',
+        context={'num_username':num_username, 'num_ID':num_ID}, 
+    )

@@ -53,6 +53,8 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
+SESSION_ENGINE = "django.contrib.sessions.backends.cache" 
+
 ROOT_URLCONF = 'UserAuth.urls'
 
 TEMPLATES = [

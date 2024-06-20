@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Хранение данных{% endblock %}
+
+{% block content %}
+    <h2>База данных</h2>
+
+<p>Здесь хранятся следующие данные:</p>
+<ul>
+  <li><strong>Имя пользователя:</strong> {{ num_username }}</li>
+  <li><strong>ID:</strong> {{ num_ID }}</li>
+</ul>
+
+{% endblock %}
